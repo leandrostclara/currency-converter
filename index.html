@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <section class="main-container">
+
+        <img src="./src/images/logo.png" alt="cédula" id="main-logo">
+
+        <section class="conversor-container">
+
+            <label> Converter <b>de</b> </label>
+            <select name="convert-from" id="convert-from">
+                <option value="real">R$ Real</option>
+                <option value="dolar">$ Dolar</option>
+                <option value="euro">€ Euro</option>
+            </select>
+
+            <label> Converter <b>para</b> </label>
+            <select name="convert-to" id="convert-to">
+                <option value="real">R$ Real</option>
+                <option value="dolar">$ Dolar</option>
+                <option value="euro">€ Euro</option>
+            </select>
+
+            <label>Valor</label>
+            <input type="number" id="valor">
+
+            <button> Converter </button>
+
+            <div class="info-container">
+                <img src="./src/images/real.png" class="logo logo-from">
+                <p class="money-from">Real</p>
+                <p class="value-from">R$ d</p>
+                <img src="./src/images/Vector.png">
+                <img src="./src/images/dolar.png" class="logo logo-to">
+                <p class="money-to">Dólar Americano</p>
+                <p class="value-to">US$ </p>
+            </div>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
