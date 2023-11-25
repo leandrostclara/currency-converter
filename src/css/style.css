@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #8A51FC;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.conversor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 375px;
+    height: 680px;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+#main-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.conversor-container label {
+    font-size: 14px;
+    align-self: flex-start;
+    color: #777777;
+    position: relative;
+    left: 20px;
+    margin: 24px 0 6px 0;
+}
+
+.conversor-container select,
+.conversor-container input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #BBBBBB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.conversor-container input {
+    box-shadow: 2px 2px 5px 0 #BBBBBB;
+}
+
+.conversor-container button {
+    width: 90%;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    background-color: #772FD3;
+    box-shadow: 0 4px 4px 0 #BBBBBB;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 23px 0 36px 0;
+}
+
+.conversor-container button:active {
+    background-color: #3A2358
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #772FD3;
+    border-radius: 20px;
+    width: 90%;
+    height: 276px;
+}
+
+.logo {
+    width: 44px;
+}
+
+.info-container .currency-from, 
+.info-container .currency-to {
+    font-size: 14px;
+    color: #777777;
+}
+
+.info-container .value-from, 
+.info-container .value-to {
+    font-size: 20px;
+    font-weight: 700;
+    color: #555555;
+}
+
+.info-container .arrow {
+    margin: 15px 0 15px 0;
+}
