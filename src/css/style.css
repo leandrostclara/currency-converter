@@ -49,6 +49,8 @@
     border: solid 1px #BBBBBB;
     font-size: 16px;
     font-weight: 700;
+    padding-left: 10px;
+    appearance: none;
 }
 
 .conversor-container input {
