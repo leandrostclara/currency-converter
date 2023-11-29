@@ -424,50 +424,6 @@ function changeCurrencyFrom() {
     currencyConvert()
 }
 
-function disableOptions() {
-
-    if (currencyConvertFrom.value == "real") {
-
-        resetOptions()
-        document.getElementById("real-option-to").setAttribute("hidden", "hidden")
-        // document.getElementById("dolar-option-to").setAttribute("selected", "selected")
-
-    }
-
-    if (currencyConvertFrom.value == "dolar") {
-
-        resetOptions()
-        document.getElementById("dolar-option-to").setAttribute("hidden", "hidden")
-        // document.getElementById("real-option-to").setAttribute("selected", "selected")
-
-    }
-
-    if (currencyConvertFrom.value == "euro") {
-
-        resetOptions()
-        document.getElementById("euro-option-to").setAttribute("hidden", "hidden")
-
-    }
-
-    if (currencyConvertFrom.value == "libra") {
-
-        resetOptions()
-        document.getElementById("libra-option-to").setAttribute("hidden", "hidden")
-
-    }
-
-    if (currencyConvertFrom.value == "bitcoin") {
-
-        resetOptions()
-        document.getElementById("bitcoin-option-to").setAttribute("hidden", "hidden")
-
-    }
-
-    currencyConvert()
-    changeCurrencyFrom()
-    changeCurrencyTo()
-
-}
 
 function changeCurrencyTo() {
 
@@ -512,17 +468,8 @@ function changeCurrencyTo() {
     currencyConvert()
 }
 
-function resetOptions() {
-
-    document.getElementById("real-option-to").removeAttribute("hidden", "hidden")
-    document.getElementById("dolar-option-to").removeAttribute("hidden", "hidden")
-    document.getElementById("euro-option-to").removeAttribute("hidden", "hidden")
-    document.getElementById("libra-option-to").removeAttribute("hidden", "hidden")
-    
-}
 
 
 convertCurrencyBtn.addEventListener("click", currencyConvert)
 currencyConvertTo.addEventListener("change", changeCurrencyTo)
 currencyConvertFrom.addEventListener("change", changeCurrencyFrom)
-currencyConvertFrom.addEventListener("change", disableOptions)
