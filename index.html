@@ -14,19 +14,26 @@
 
     <section class="main-container">
 
-        <img src="./src/images/logo.gif" alt="logo principal" id="main-logo">
+        <img src="./src/images/logo1.gif" alt="logo principal" id="main-logo">
 
         <section class="conversor-container">
 
             <label> Converter <b>de</b> </label>
-            <select name="convert-from" id="convert-from" >
-                <option value="real">R$ Real Brasileiro</option>
+            <select name="convert-from" id="convert-from">
+                <option value="real" id="real-option-from">R$ Real Brasileiro</option>
+                <option value="dolar" id="dolar-option-from">U$ Dolar Americano</option>
+                <option value="euro" id="euro-option-from">€ Euro</option>
+                <option value="libra" id="libra-option-from">£ Libra</option>
+                <option value="bitcoin" id="bitcoin-option-from">₿ Bitcoin</option>
             </select>
 
             <label> Converter <b>para</b> </label>
-            <select name="convert-to" class="convert-to">
-                <option value="dolar">U$ Dolar Americano</option>
-                <option value="euro">€ Euro</option>
+            <select name="convert-to" id="convert-to">
+                <option value="dolar" id="dolar-option-to">U$ Dolar Americano</option>
+                <option value="real" id="real-option-to">R$ Real Brasileiro</option>
+                <option value="euro" id="euro-option-to">€ Euro</option>
+                <option value="libra" id="libra-option-to">£ Libra</option>
+                <option value="bitcoin" id="bitcoin-option-to">₿ Bitcoin</option>
             </select>
 
             <label><b>Valor</b></label>
@@ -38,13 +45,15 @@
                 <img src="./src/images/real.png" class="logo logo-from">
                 <p class="currency-from">Real Brasileiro</p>
                 <p class="value-from">R$ 0,00</p>
-                <img class="arrow" src="./src/images/Vector.png">
+                <img class="arrow" src="./src/images/blue-arrow.png">
                 <img src="./src/images/dolar.png" class="logo logo-to">
                 <p class="currency-to">Dólar Americano</p>
                 <p class="value-to">$ 0,00</p>
             </div>
 
         </section>
+
+        
 
     </section>
 
