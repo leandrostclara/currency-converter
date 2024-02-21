@@ -1,7 +1,7 @@
 # Conversor de Moedas
 
 ## Objetivo
-App feito a fins de estudos, onde realiza conversões de valores das moedas selecionadas, consumindo a API do banco central.
+Este é um projeto criado com o objetivo de estudo, desenvolvido como parte do curso Full Stack da DevClub.
 
 ## Tecnologias Utilizadas
 - Html
